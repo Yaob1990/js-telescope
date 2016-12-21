@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //label 同时中止内外两层循环！
+    var num =0;
+    outermost:
+        for(var i=0;i<10;i++){
+            for(var j=0;j<10;j++){
+                if(i==5 && j==5){
+                    continue outermost;
+                    //break;
+                }
+                num++;
+            }
+        }
+    alert(num);
+</script>
+</html>
