@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title E
+<body>
+
+</body>
+<script>
+    function displayInfo(args) {
+        var output = "";
+        if(typeof args.name == "string"){
+            output += "Name" + args.name + "\n";
+        }
+        if(typeof args.age == "number"){
+            output += "age:" + args.age + "\n";
+        }
+        alert(output);
+    }
+
+    displayInfo({
+        name:"Yao",
+        age:29
+    })
+
+    displayInfo({
+        name:"Greg"
+    })
+</script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    with(location){
+        //局部变量，找不到相关属性，会向上一级对象就行查询
+        var qs = search.substring(1);
+        var hostname = hostname;
+        var url = href;
+    }
+</script>
+</html>

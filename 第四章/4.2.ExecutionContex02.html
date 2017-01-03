@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    var color = "blue";
+    function changeColor() {
+        var anotherColor = "red";
+
+        function swapColors() {
+            var tempColor = anotherColor;
+            anotherColor = color;
+            color = tempColor;
+
+            //这里可以访问color,another,tempColor
+        }
+        //可以访问color,anotherColor
+        swapColors();
+    }
+    //只能访问color
+    changeColor();
+</script>
+</html>

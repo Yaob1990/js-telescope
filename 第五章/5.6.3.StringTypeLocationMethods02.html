@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var stringValue = "chinese is a beautiful country！"
+    var positions = new Array();
+    var pos = stringValue.indexOf("e")
+
+    while (pos > -1){
+        positions.push(pos);
+        pos = stringValue.indexOf("e",pos+1);
+    }
+
+    alert(positions);
+</script>
+</html>
